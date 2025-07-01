@@ -1,0 +1,26 @@
+.agregar-tarea {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.agregar-tarea:hover {
+    background-color: #45a049;
+}
+.tarea {
+    padding: 7px 17px;
+    border-radius: 10px;
+}
+h1 {
+    text-align: center;
+    color: #333;
+    font-family: 'Orbitron', sans-serif;
+    padding: 20px;
+}
+.agregar-tarea-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
