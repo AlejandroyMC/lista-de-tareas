@@ -1,26 +1,133 @@
-.agregar-tarea {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.agregar-tarea:hover {
-    background-color: #45a049;
-}
-.tarea {
-    padding: 7px 17px;
-    border-radius: 10px;
-}
-h1 {
-    text-align: center;
-    color: #333;
+
+body {
     font-family: 'Orbitron', sans-serif;
-    padding: 20px;
+    background-color: #f2f2f2;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
 }
+
+/* Header */
+header {
+    width: 100%;
+    background-color: #1e1e2f;
+    color: #ffffff;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    margin: 0;
+}
+
+/* Main */
+main {
+    width: 100%;
+    max-width: 600px;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+/* Contenedor de agregar tarea */
 .agregar-tarea-container {
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.nombre-tarea {
+    padding: 10px;
+    width: 70%;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+}
+
+.agregar-tarea {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.agregar-tarea:hover {
+    background-color: #45a049;
+}
+
+/* Lista de tareas */
+.lista-tareas {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Tarea individual */
+.tarea {
+    background-color: #ffffff;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.2s;
+}
+
+.tarea:hover {
+    transform: scale(1.01);
+}
+
+/* Botones de tarea */
+.tarea button {
+    margin-left: 10px;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.eliminar-tarea {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.eliminar-tarea:hover {
+    background-color: #c0392b;
+}
+
+.editar-tarea {
+    background-color: #3498db;
+    color: white;
+}
+
+.editar-tarea:hover {
+    background-color: #2980b9;
+}
+
+/* Footer (opcional) */
+footer {
+    margin-top: auto;
+    padding: 20px;
+    font-size: 0.9rem;
+    color: #aaa;
 }
